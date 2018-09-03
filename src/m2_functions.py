@@ -23,7 +23,8 @@ import rosegraphics as rg
 
 def main():
     hyp(3, 4)
-
+    stuff("red", 10)
+    stuff("purple", 15)
 
 import math
 
@@ -48,7 +49,7 @@ def hyp(a, b):
 
 ###############################################################################
 #
-# TODO: 4a.  Define a function immediately below this _TODO_.
+# DONE: 4a.  Define a function immediately below this _TODO_.
 #   It takes two arguments:
 #     -- a string that represents a color (e.g. 'red')
 #     -- a positive integer that represents the thickness of a Pen.
@@ -70,13 +71,20 @@ def hyp(a, b):
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 4b.  In main, CALL your function at least TWICE (with different values
+# DONE: 4b.  In main, CALL your function at least TWICE (with different values
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
 def stuff(c, t):
-    window = rg.TurtleWindow
+    window = rg.TurtleWindow()
     window.delay(20)
+    jim = rg.SimpleTurtle
+    joe = rg.SimpleTurtle
+    jim.pen = rg.Pen("green", t)
+    joe.pen = rg.Pen(c, 5)
+    jim.Forward(100)
+    joe.Backward(100)
+    window.close_on_mouse_click
 
 
 ###############################################################################
