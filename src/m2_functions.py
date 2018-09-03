@@ -78,18 +78,17 @@ def hyp(a, b):
 def stuff(c, t):
     window = rg.TurtleWindow()
     window.delay(20)
-    jim = rg.SimpleTurtle
-    joe = rg.SimpleTurtle
+    jim = rg.SimpleTurtle()
+    joe = rg.SimpleTurtle()
     jim.pen = rg.Pen("green", t)
     joe.pen = rg.Pen(c, 5)
-    jim.Forward(100)
-    joe.Backward(100)
-    window.close_on_mouse_click
-
+    jim.forward(100)
+    joe.backward(100)
+    window.close_on_mouse_click()
 
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
