@@ -219,8 +219,13 @@ def try_methods_and_functions():
     for i in range(2):
         t.draw_square(100)
         t.left(30)
-    t.speed = 1
-    t.pen = rg.Pen("blue", 35)
+    t.speed = 5
+    t.pen = rg.Pen("red", 5)
+    for i in range(10):
+        t.draw_square(50)
+        t.left(15)
+    t.speed = 100
+    t.pen = rg.Pen('red', 35)
     for i in range(8):
         t.draw_square(300)
         t.left(60)
